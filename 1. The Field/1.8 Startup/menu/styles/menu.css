@@ -1,0 +1,152 @@
+@import "https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Simonetta:ital,wght@0,400;0,900;1,400;1,900&display=swap";
+.parallax {
+  background-image: url("../../homepage/images/coffeecup-head.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.sticky {
+  flex: auto;
+  text-align: center;
+  position: -webkit-sticky;
+  position: sticky;
+}
+/* Start of navbar */
+ nav {
+  background-color: #27342d;
+  text-align: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 20px;
+} 
+
+nav ul li {
+  padding: 0px 20px;
+  display: inline;
+}
+
+/*  #hamburgerLinks {
+  display: none;
+  margin-top: 20px;
+}
+
+.hamburger-icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  padding-top: 10px;
+  right: 48%;
+}   */
+
+a {
+  text-decoration: none;
+  color: #f1ede9;
+  font-weight: 200;
+  font-size: large;
+  letter-spacing: 1px;
+}
+
+a:hover {
+  font-weight: 500;
+}
+
+/* End of navbar */
+
+body {
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 50px repeat(12, 1fr);
+  gap: 0px;
+  height: 100vh;
+  background-color: #f1ede9;
+  color: #27342d;
+  font-family: "Rubik", sans-serif;
+
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+a {
+  color: #AA8B56;
+}
+
+p {
+  font-weight: 500;
+}
+
+header,
+h1,
+h2 {
+  font-family: "Simonetta", serif;
+  padding-left: 1em;
+}
+
+
+li {
+  list-style: none;
+}
+
+.product {
+  padding: 1em;
+}
+
+.price {
+  float: right;
+}
+
+.card {
+  display: grid;
+  border: solid gray 1px;
+  margin: 5px;
+  padding: 5px;
+  background-color: #f1ede9;
+}
+
+footer {
+  display: grid;
+  color: #AA8B56;
+  background-color: #27342d;
+  text-align: center;
+  grid-column: span 12;
+  margin: 5px;
+  padding: 5px;
+}
+
+.cardbox {
+  display: grid;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 479px) {
+  .card {
+    grid-column: span 12;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 1023px) {
+  #card1 {
+    grid-column: span 12;
+  }
+  #card2,
+#card3 {
+    grid-column: span 6;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #card1 {
+    grid-column: span 12;
+  }
+  #card2,
+#card3 {
+    grid-column: span 6;
+  }
+}/*# sourceMappingURL=menu.css.map */

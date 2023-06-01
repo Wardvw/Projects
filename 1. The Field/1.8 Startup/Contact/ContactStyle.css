@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Simonetta:ital,wght@0,400;0,900;1,400;1,900&display=swap');
+
+body{
+    background-color: whitesmoke;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 50px repeat(12,1fr);
+    gap: 0px;
+    font-weight: 800;
+    color: rgb(27, 23, 65);
+    font-family: 'Rubik', sans-serif;
+}
+
+.parallax {
+    background-image: url("../Contact/images/photo-1518975775530-f4dcbbee9672.jfif");
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sticky {
+    flex: auto;
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Simonetta', serif;
+    grid-column: span 12;
+}
+.sticky-header {
+    flex: auto;
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    background-color: #27342d;
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    }
+
+    nav ul li {
+    display: block;
+    padding: 0px 20px;
+    }
+
+.cardbox{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #F0EBCE;
+    border: solid grey 1px;
+    margin: 5px;
+    padding: 5px;
+} 
+
+#cardcontact{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#contactus, #openingtimes, #askus, #comevisitus{
+    margin-bottom: 11.92px;
+    text-align: center;
+}
+
+#textblock, iframe{
+    border: solid grey 2px;
+}
+
+form{
+    font-size: large;
+}
+
+#textbar{
+    width:30vw;
+    height:3vh;
+}
+
+textarea{
+    min-height: 30vh;
+    max-height: 30vh;
+    min-width: 30vw;
+    max-width: 30vw;  
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+iframe{
+    margin-left: 2px; 
+    margin-right: 2px; 
+    width: 33vw; 
+    height: 59.5vh;
+}
+
+footer {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #27342d;
+    color: #f1ede9;
+    font-weight: 200px;
+    font-size: xx-small;
+    padding: 10px;
+    }
+    footer a {
+    text-decoration: underline;
+    font-size: inherit;
+    }
+
+/* #cardcontact, #cardform, #cardmap{
+    border: solid grey 1px;
+} */
+
+@media only screen and (max-width: 479px){ /*smartphone*/ 
+    #cardcontact, #cardmap, #cardform{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: larger;
+    } 
+
+    #cardform{ 
+        flex-grow: 1;
+    }
+
+    form, #textbar{
+        display: flex;
+        width: 75vw;
+        justify-content:  center;
+    }
+
+    textarea{
+        min-height: 30vh;
+        max-height: 30vh;
+        min-width: 75vw;
+        max-width: 75vw;  
+    }
+    
+    iframe{
+        width: 90vw; 
+        height: 65vw;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1023px){ /*tablet*/ 
+    #cardform,#cardcontact,#cardmap{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    #cardcontact{
+        width: 40vw;
+    }
+
+    #cardform{
+        width: 46vw;
+    }
+
+    form{
+        width: 42vw;
+    }
+
+    #textbar{
+        width: 36vw;
+    }
+
+    textarea{
+        min-height: 19vh;
+        max-height: 19vh;
+        min-width: 36vw;
+        max-width: 36vw;  
+    }
+
+    #cardmap{
+        width:100vw;
+    } 
+
+    iframe{
+        width: 90vw; 
+        height: 65vw;
+    }
+}

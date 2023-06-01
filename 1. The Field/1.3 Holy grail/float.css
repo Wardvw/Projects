@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+div{
+    border: 0px solid grey; /*only for clarity of boxborder*/
+}
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color: rgb(27, 23, 65);
+}
+
+.nav,.main,.aside{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 3px;
+}
+.header,.footer{
+    padding: 3px;
+}
+
+.header{
+    background-color: rgb(255, 102, 0);
+    margin-bottom: 5px;
+}
+
+.nav{
+    background-color: rgb(230, 228, 137);
+}
+
+.main{
+    background-color: rgb(255, 255, 255);
+}
+
+.aside{
+    background-color: rgb(230, 228, 137);
+}
+
+.footer{
+    color: white;
+    background-color: rgb(73, 0, 0);
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 479px){
+}
+
+@media only screen and (min-width: 480px){
+    .header{
+        float:none
+    }
+
+    .fourdivs{
+        width: 100vw;
+    }
+
+    .nav{
+        float: left;
+        width: 20%;
+    }
+
+    .main{
+        float: left;
+        width: 35%;
+    }
+
+    .aside{
+        float: right;
+        width: 20%;
+    }       
+    
+    .footer{
+        float: left;
+        width:100vw;
+    }
+}

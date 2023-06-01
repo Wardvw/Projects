@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Simonetta:ital,wght@0,400;0,900;1,400;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+  }
+  
+  body{
+    margin:0;
+    font-family: 'Rubik', sans-serif;
+    font-size:17px;
+    color:#926239;
+    line-height:1.6;
+  }
+  
+  #showcase{
+    background-image:url(./pexels-nao-triponez-129207.jpg);
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+    text-align:center;
+    padding:0 20px;
+  }
+
+  
+  #showcase h1{
+    font-size:50px;
+    line-height:1.2;
+    margin-bottom: 50px;
+    margin-top: 100px;
+  }
+  
+  #showcase .button{
+    font-size:18px;
+    text-decoration:none;
+    color:#AA8B56;
+    border:#AA8B56 1px solid;
+    padding:10px 20px;
+    border-radius:10px;
+    margin-top:20px;
+  }
+  
+  #showcase .button:hover{
+    background:#395144;
+    color:#F0EBCE;
+  }
