@@ -1,0 +1,47 @@
+.card{
+    border-color: #E4E4E4;
+    border-width: 5px;
+}
+
+.card:hover{
+    background-color: #04c3ee;
+    border-color: #04c3ee;
+    border-width: 5px;
+}
+
+.btn:hover{
+    color: #f9f7f4;
+    background-color: #04c3ee;
+    border-color: #04c3ee;
+}
+
+h6{
+    line-height: 1.00;
+    margin-bottom: 4px;
+}
+
+p{
+    line-height:1.40;
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+
+/*
+.m-4{
+    align-items: center;
+}
+
+img{
+    width: 41;
+    height: 41;
+}
+
+hr{
+    height: 1.5px;
+    border-width: 0;
+    background-color:gray;
+    width: 25%;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    margin: auto;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./ContactStyle.css">
+</head>
+<body> 
+    <!--<div class="nav">-->
+    <header class="parallax">
+        <div class="sticky-header">
+            <h1>Mugs & Kisses</h1>
+            <h2>Cafe * Coffee Roastery</h2>
+        </div>          
+    </header>                                                           
+
+    <nav class="sticky">
+        <ul>      
+            <div id="hamburgerLinks">
+                <li><a href="../homepage/homepage.html">HOME</a></li>
+                <li><a href="../menu/menu.html">MENU</a></li>
+                <li><a href="../Product/product.html">WHOLESALE</a></li>
+                <li><a href="">EVENTS</a></li>
+                <li><a href="../reviews/reviews.html">SPECIALS</a></li>
+                <li><a href="../Contact/Contact.html">CONTACT</a></li>
+            </div>
+            <a href="javascript:void(0);" class="hamburger-icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>   
+        </ul>
+    </nav>
+
+        <!--</div>-->
+    <div class="cardbox">
+        <div class="card" id="cardcontact">
+            <h2 id="contactus">Contact us</h2>
+            <div id="textblock">
+                <h3>Mugs and Kisses bvba<br>
+                Gaston Crommenlaan 4 S, <br>
+                9050 Gent, België<br>
+                VAT: 0123456789<br><br>
+
+                <a href="mailto:koffie@email.com?subject=Contact Us">koffie@email.com</a><br>
+                <a href="tel:+32-456-7890">+32-456-7890</a></h3>
+
+            </div>    
+            <h2 id="openingtimes">Opening times</h2>
+            <div id="textblock">
+                <h3>Tuesday: 8u - 18u<br>
+                Friday: 8u - 18u<br>
+                Saturday: 8u - 17u<br>
+                Sunday and Monday: Closed</h3>
+                
+                <p>ONLINE 24/7 FREE SHIPPING<br>
+                STARTING FROM 50 EURO</p> 
+            </div> 
+        </div>
+        <div class="card" id="cardform">
+            <h2 id="askus">Ask us a question</h2>
+            <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/f/xzbqbele" method="post">
+                <fieldset id="fs-frm-inputs">
+                    <label for="full-name">Full Name</label><br>
+                    <input type="text" name="name" id="textbar" placeholder="First and Last" required="true" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;"><br>
+                    <label for="email-address">Email Address</label><br>
+                    <input type="email" name="_replyto" id="textbar" placeholder="Example@domain.com" required="true"><br>
+                    <label for="telephone">Telephone Number (optional)</label><br>
+                    <input type="telephone" name="telephone" id="textbar" placeholder="1234567890"><br>
+                    <label for="optin">Receive our newsletter?</label><br>
+                    <input type="radio" id="newsletter" name="newsletter" value="yes">
+                    <label for="newsletter">Yes</label>
+                    <input type="radio" id="newsletter" name="newsletter" value="no" checked>
+                    <label for="newsletter">No</label><br>
+                    <label for="message">Message</label><br>
+                    <textarea rows="6" name="complaint" id="complaint" placeholder="Your message" required="true"></textarea>
+                    <input type="hidden" name="_subject" id="email-subject" value="Message form submission"><br>
+                    <input type="submit" value="Send" id="button">
+                </fieldset>              
+            </form>
+        </div>
+        <div class="card" id="cardmap">
+            <h2 id="comevisitus">Come visit us</h2>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d1054.8598453006093!2d3.7362533401617415!3d51.03658462236072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d51.0366649!2d3.7358341!5e0!3m2!1snl!2sbe!4v1672873141218!5m2!1snl!2sbe"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+    </div>
+    <!-- <div class="footer"> -->
+    <footer>
+        <p>&copy;2023 by GroupOne Design</p>
+        <p>Gaston Crommenlaan 4 S, 9050 Gent, België - VAT 0123456789</p>
+        <p>koffie@email.com</p>
+    </footer>
+    <!-- </div> -->
+</body>
+</html>

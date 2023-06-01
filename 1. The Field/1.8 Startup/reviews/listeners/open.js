@@ -1,0 +1,1 @@
+panels.forEach(panel => panel.addEventListener('click', toggleOpen));

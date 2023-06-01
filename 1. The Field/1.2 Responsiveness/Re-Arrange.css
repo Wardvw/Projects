@@ -1,0 +1,40 @@
+*{
+    margin: 3px;
+    padding: 3px;
+}
+
+body{ /*parent*/
+    display: flex;
+}
+
+.box{ /*children*/
+    text-align: center;
+}
+
+@media only screen and (max-width: 479px){ /*smartphone*/
+    body{ 
+        flex-direction: column; 
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1023px){ /*tablet*/
+    body{ 
+        flex-direction: space-between; 
+        flex-wrap: wrap; /*start new line when at total width*/
+    }
+    #small{
+        width: 60% /*Normally, don't go to 100%*/   
+    }
+    #medium{
+        width: 30%
+    }
+    #large{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1024px){ /*PC*/
+    body{ 
+        flex-direction: row; 
+    }
+}

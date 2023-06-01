@@ -1,0 +1,69 @@
+body{ /*parent*/
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(190, 173, 94);
+    text-align: center;
+}
+
+h1{
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+h5{
+    font-style: italic; 
+}
+
+hr{
+    margin-left: 10px;
+}
+
+/*Classes*/
+
+.quote p {
+    font-family: "Papyrus", fantasy;
+    font-style: italic;   
+}
+
+.describe h4 {
+    color: red ;
+}  
+
+.whitetextblackbackground {
+    color: white;
+    background-color: black;
+    align-self: flex-start;
+}
+
+.greenfont {
+    color: green;  
+}
+
+.italic {
+    font-style: italic; 
+}
+
+.align{
+    width: 50vw;
+    text-align: center;
+}
+
+/*ResponsiveWebDesign*/
+@media only screen and (max-width: 479px){ /*smartphone*/
+    body{ 
+        color: black;  
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1023px){ /*tablet*/
+    body{ 
+        color: black;    
+    }
+}
+
+@media only screen and (min-width: 1024px){ /*PC*/
+    body{ 
+        color: black;    
+    }
+}
+
